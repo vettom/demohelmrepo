@@ -2,11 +2,10 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: nginx
-  # repository: dennysv/prom_sd_shim
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "1.24.0"
@@ -30,15 +29,9 @@ podAnnotations: {}
 podLabels: {}
 
 podSecurityContext: {}
-  # fsGroup: 2000
+
 
 securityContext: {}
-  # capabilities:
-  #   drop:
-  #   - ALL
-  # readOnlyRootFilesystem: true
-  # runAsNonRoot: true
-  # runAsUser: 1000
 
 service:
   type: NodePort
@@ -65,9 +58,7 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+
 
 resources: 
   limits:
@@ -92,23 +83,17 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 2
   targetCPUUtilizationPercentage: 80
-  # targetMemoryUtilizationPercentage: 80
 
-# # Additional volumes on the output Deployment definition.
+
 volumes:
   - name: homepage
     configMap:
         name: home
-#   - name: endpoints-cm
-#     configMap:
-#       name: endpoints 
 
-# # Additional volumeMounts on the output Deployment definition.
+
 volumeMounts: 
   - name: homepage
     mountPath: "/usr/share/nginx/html"
-#   - name: endpoints-cm
-#     mountPath: "/config"
 
 nodeSelector: {}
 
