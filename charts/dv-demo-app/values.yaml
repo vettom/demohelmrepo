@@ -1,0 +1,118 @@
+# Default values for dv-demo-app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: nginx
+  # repository: dennysv/prom_sd_shim
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "1.24.0"
+  # tag: "0.1.4"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Automatically mount a ServiceAccount's API credentials?
+  automount: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+podLabels: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+
+ingress:
+  enabled: true
+  className: "alb"
+  annotations: 
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    # cert-manager.io/cluster-issuer: selfsigned
+    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:eu-west-2:440550911597:certificate/f49a5e3b-85a4-4a82-bebe-39c3170abbcc"
+    alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
+    alb.ingress.kubernetes.io/inbound-cidrs: 51.89.179.216/32,86.136.172.1/32,37.228.234.180/32
+    alb.ingress.kubernetes.io/target-type: instance
+    alb.ingress.kubernetes.io/group.name: "uk-as-dev-internal"
+  hosts:
+    - host: dvdemo.dev.hellorayo.com
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+resources: 
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+livenessProbe:
+  httpGet:
+    path: /
+    port: 80
+readinessProbe:
+  httpGet:
+    path: /
+    port: 80
+    scheme: HTTP
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 2
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+# # Additional volumes on the output Deployment definition.
+volumes:
+  - name: homepage
+    configMap:
+        name: home
+#   - name: endpoints-cm
+#     configMap:
+#       name: endpoints 
+
+# # Additional volumeMounts on the output Deployment definition.
+volumeMounts: 
+  - name: homepage
+    mountPath: "/usr/share/nginx/html"
+#   - name: endpoints-cm
+#     mountPath: "/config"
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
