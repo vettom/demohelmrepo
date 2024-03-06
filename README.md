@@ -1,2 +1,3 @@
 # demohelmrepo
-Automate helm repo build
+Automate helm repo build.
+Rebuild
