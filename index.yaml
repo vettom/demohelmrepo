@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   dv-demo-app:
   - apiVersion: v2
-    created: "2024-03-06T08:48:56.132629Z"
+    created: "2024-03-06T08:57:18.829182Z"
+    description: A Helm chart for Kubernetes
+    digest: 8cb51dd2d0803eb5173a8342dd2b96ce3652bd8bd3f7eaf76a6b860c7500bf57
+    name: dv-demo-app
+    type: application
+    urls:
+    - https://vettom.github.io/demohelmrepo/dv-demo-app-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    created: "2024-03-06T08:57:18.828746Z"
     description: A Helm chart for Kubernetes
     digest: ec76b999f3836a74b9605b612fbd6ccb9b6c8c747f52fc8c225226a219618745
     name: dv-demo-app
@@ -10,4 +19,4 @@ entries:
     urls:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-06T08:48:56.131988Z"
+generated: "2024-03-06T08:57:18.828244Z"
