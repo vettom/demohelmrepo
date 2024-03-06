@@ -1,1 +1,1 @@
-# demohelmrepo
+# GH-pages readme
