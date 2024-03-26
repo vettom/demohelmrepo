@@ -1,7 +1,7 @@
 # Default values for dv-demo-app.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
+content: "This is from content value"
 replicaCount: 2
 
 image:
@@ -46,12 +46,8 @@ ingress:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/ssl-redirect: '443'
-    # cert-manager.io/cluster-issuer: selfsigned
-    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:eu-west-2:440550911597:certificate/f49a5e3b-85a4-4a82-bebe-39c3170abbcc"
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
-    alb.ingress.kubernetes.io/inbound-cidrs: 51.89.179.216/32,86.136.172.1/32,37.228.234.180/32
-    alb.ingress.kubernetes.io/target-type: instance
-    alb.ingress.kubernetes.io/group.name: "uk-as-dev-internal"
+    alb.ingress.kubernetes.io/target-type: ip
   hosts:
     - host: dvdemo.dev.hellorayo.com
       paths:
