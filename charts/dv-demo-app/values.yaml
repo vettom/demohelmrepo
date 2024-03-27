@@ -1,8 +1,8 @@
 # Default values for dv-demo-app.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-heading: "Welcome  version: 2.0.4"
-content: "This is from content value 1.25.4  readyness 60"
+heading: "Welcome  version: 2.0.5"
+content: "This is from content value 1.25.4  Initidal delay 30"
 replicaCount: 2
 
 image:
@@ -74,7 +74,7 @@ readinessProbe:
     path: /
     port: 80
     scheme: HTTP
-  periodSeconds: 60
+  initialDelaySeconds: 30
 
 autoscaling:
   enabled: true
