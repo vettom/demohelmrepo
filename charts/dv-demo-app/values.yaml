@@ -1,9 +1,9 @@
 # Default values for dv-demo-app.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-heading: "Welcome  version: 2.1.0"
-content: "This is from content value 1.25.4. Ingress dereg-10sec "
-replicaCount: 2
+heading: "Welcome  version: 2.1.1"
+content: "This is from content value 1.25.4. Ingress dereg-10sec, 4pod "
+replicaCount: 4
 
 image:
   repository: nginx
