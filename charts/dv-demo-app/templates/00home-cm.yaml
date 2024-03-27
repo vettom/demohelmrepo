@@ -12,4 +12,3 @@ metadata:
   labels:
     app.kubernetes.io/managed-by: Helm
   name: home
-  namespace: default
