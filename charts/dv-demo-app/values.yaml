@@ -1,9 +1,9 @@
 # Default values for dv-demo-app.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-heading: "Welcome  version: 3.0.6"
-content: "This is from content value 1.25.4. termination lifecy60,  "
-replicaCount: 1
+heading: "Welcome  version: 1.0.0"
+content: "Nginx 1.24.0 deployment "
+replicaCount: 2
 
 image:
   repository: nginx
@@ -49,7 +49,6 @@ ingress:
     alb.ingress.kubernetes.io/ssl-redirect: '443'
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/target-group-attributes: deregistration_delay.timeout_seconds=10
   hosts:
     - host: dvdemo.dev.hellorayo.com
       paths:

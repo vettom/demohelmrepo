@@ -1,6 +1,6 @@
 apiVersion: v2
 name: dv-demo-app
-description: A Helm chart for Kubernetes
+description: Simple Demo app deployment with ingress
 type: application
-version: 3.0.6
+version: 1.0.0
 
