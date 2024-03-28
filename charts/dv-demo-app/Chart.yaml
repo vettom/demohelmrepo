@@ -2,5 +2,5 @@ apiVersion: v2
 name: dv-demo-app
 description: Simple Demo app deployment with ingress
 type: application
-version: 1.0.0
+version: 1.0.1
 

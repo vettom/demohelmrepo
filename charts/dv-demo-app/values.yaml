@@ -1,15 +1,15 @@
 # Default values for dv-demo-app.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-heading: "Welcome  version: 1.0.0"
-content: "Nginx 1.24.0 deployment "
+heading: "Welcome  version: 1.0.1"
+content: "Nginx 1.25.4 deployment "
 replicaCount: 2
 
 image:
   repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.24.0"
+  tag: "1.25.4"
 
 imagePullSecrets: []
 nameOverride: ""
