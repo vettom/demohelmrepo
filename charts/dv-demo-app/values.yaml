@@ -1,8 +1,8 @@
 # Default values for dv-demo-app.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-heading: "Welcome  version: 1.0.1"
-content: "Nginx 1.25.4 deployment "
+heading: "Welcome  version: 1.0.2"
+content: "Nginx 1.25.4 deployment, just version change "
 replicaCount: 2
 
 image:
