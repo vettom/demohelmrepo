@@ -2,12 +2,12 @@ apiVersion: v1
 entries:
   dv-demo-app:
   - apiVersion: v2
-    created: "2024-03-28T11:17:35.166434Z"
+    created: "2024-03-28T11:39:43.438723Z"
     description: Simple Demo app deployment with ingress
-    digest: a7ad9c2ef08e1249b9e05981264acb124d57af9c1df40b4ae9f2cfb1abd1f2cf
+    digest: 0d7633db1b1c368cf902d6e690d929212c1c8f3f37386d7940a798392d0deb7e
     name: dv-demo-app
     type: application
     urls:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-1.0.0.tgz
     version: 1.0.0
-generated: "2024-03-28T11:17:35.1659Z"
+generated: "2024-03-28T11:39:43.43815Z"
