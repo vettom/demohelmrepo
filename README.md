@@ -10,3 +10,5 @@ helm package charts/dv-demo-app
 helm repo index --url https://vettom.github.io/demohelmrepo/ --merge index.yaml .
 
 ```
+
+- V 3.0.0  : dvdemo.vettom.github.io domain and no 443 redirect

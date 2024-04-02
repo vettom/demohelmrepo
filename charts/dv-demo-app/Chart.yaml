@@ -1,6 +1,6 @@
 apiVersion: v2
 name: dv-demo-app
-description: Simple Demo app deployment with ingress
+description: Demo app dvdemo.vettom.github.io
 type: application
-version: 2.0.0
+version: 3.0.0
 

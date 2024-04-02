@@ -1,8 +1,8 @@
 # Default values for dv-demo-app.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-heading: "Welcome  version: 2.0.0"
-content: "Nginx 1.25.4 deployment, with lifecycle and alb timeout "
+heading: "Welcome  version: 3.0.0"
+content: "Nginx 1.25.4 deployment, dvdemo.vettom.github.io "
 replicaCount: 2
 
 image:
@@ -46,13 +46,13 @@ ingress:
     alb.ingress.kubernetes.io/scheme: internet-facing
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    # alb.ingress.kubernetes.io/ssl-redirect: '443'
     alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/target-group-attributes: deregistration_delay.timeout_seconds=30
 
   hosts:
-    - host: dvdemo.dev.hellorayo.com
+    - host: dvdemo.vettom.github.io
       paths:
         - path: /
           pathType: ImplementationSpecific
