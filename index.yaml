@@ -2,16 +2,16 @@ apiVersion: v1
 entries:
   dv-demo-app:
   - apiVersion: v2
-    created: "2024-05-23T12:08:51.517905+01:00"
+    created: "2024-05-23T12:09:25.122622+01:00"
     description: Demo app dvdemo.vettom.github.io
-    digest: aba01994a68ecbe06a8c28466171f64eff34fbc09517550c4809bd65a33dee4a
+    digest: 73976d83bc7465993da5ac5426d9ff5e445fad967201b8a4f2613f73ec6515ed
     name: dv-demo-app
     type: application
     urls:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-3.0.0.tgz
     version: 3.0.0
   - apiVersion: v2
-    created: "2024-05-23T12:08:51.517409+01:00"
+    created: "2024-05-23T12:09:25.12213+01:00"
     description: Simple Demo app deployment with ingress
     digest: ecd9568a0f897e56826f2e6f28360dc41ec6ca91fe0f7cc71759bac77dfc6499
     name: dv-demo-app
@@ -20,7 +20,7 @@ entries:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
-    created: "2024-05-23T12:08:51.51695+01:00"
+    created: "2024-05-23T12:09:25.121931+01:00"
     description: Simple Demo app deployment with ingress
     digest: 109b06d501f745260f29182da34b9f67c41ef2cc04b344a2ff7871a1a715acaa
     name: dv-demo-app
@@ -29,7 +29,7 @@ entries:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v2
-    created: "2024-05-23T12:08:51.51655+01:00"
+    created: "2024-05-23T12:09:25.121732+01:00"
     description: Simple Demo app deployment with ingress
     digest: 5268e074848834fc72ec8f31c816cdf325dc88cdf78843e6699948b6dae51ce6
     name: dv-demo-app
@@ -38,7 +38,7 @@ entries:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
-    created: "2024-05-23T12:08:51.516085+01:00"
+    created: "2024-05-23T12:09:25.121527+01:00"
     description: Simple Demo app deployment with ingress
     digest: 0d7633db1b1c368cf902d6e690d929212c1c8f3f37386d7940a798392d0deb7e
     name: dv-demo-app
@@ -49,7 +49,7 @@ entries:
   eks-demo:
   - apiVersion: v2
     appVersion: "2.5"
-    created: "2024-05-23T12:08:51.518734+01:00"
+    created: "2024-05-23T12:09:25.12323+01:00"
     description: helm chart with echoserver 2.5
     digest: 0c3da28d7df5a6d137f4e693b28da2337bf4a69aa0fe5955a2e94d667350428c
     name: eks-demo
@@ -59,12 +59,12 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: "2.4"
-    created: "2024-05-23T12:08:51.518345+01:00"
-    description: helm chart with echo server 2.4
-    digest: 2b44ecab78e190cf75a493975fd6ce24901a12470b5e2712aed6561a284ec7e7
+    created: "2024-05-23T12:09:25.12304+01:00"
+    description: helm chart with echoserver 2.4
+    digest: ba7846226d0a084913af8079bfa908f823a89ca5e4d77506c0318731a7eda14b
     name: eks-demo
     type: application
     urls:
     - https://vettom.github.io/demohelmrepo/eks-demo-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-23T12:08:51.51547+01:00"
+generated: "2024-05-23T12:09:25.121248+01:00"

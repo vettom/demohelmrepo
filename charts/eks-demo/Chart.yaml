@@ -1,10 +1,10 @@
 apiVersion: v2
 name: eks-demo
-description: helm chart with echoserver 2.5
+description: helm chart with echoserver 2.4
 
 type: application
 
 
-version: 0.1.1
+version: 0.1.0
 
-appVersion: "2.5"
+appVersion: "2.4"

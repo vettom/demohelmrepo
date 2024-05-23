@@ -8,7 +8,7 @@ image:
   repository: k8s.gcr.io/e2e-test-images/echoserver
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2.5"
+  tag: "2.4"
 
 imagePullSecrets: []
 nameOverride: ""
