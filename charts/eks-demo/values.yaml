@@ -49,13 +49,13 @@ ingress:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-route53
   hosts:
-    - host: demo.dev.bauerradio.com
+    - host: demo.dev.vettom.com
       paths:
         - path: /
           pathType: Prefix
   tls:
     - hosts:
-        - demo.dev.bauerradio.com
+        - demo.dev.vettom.com
       secretName: echoserver-certificate
 
 resources: 

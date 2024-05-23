@@ -1,6 +1,6 @@
 apiVersion: v2
 name: eks-demo
-description: helm chart with echo server 2.5
+description: helm chart with echoserver 2.5
 
 type: application
 
