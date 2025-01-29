@@ -1,4 +1,5 @@
-![vettom.pages.dev banner](https://vettom-images.s3.eu-west-1.amazonaws.com/logo/vettom-banner.jpg)
+[<img src="https://vettom-images.s3.eu-west-1.amazonaws.com/logo/vettom-banner.jpg">](https://vettom.pages.dev/) 
+
 # demohelmrepo
 This demo contains dvdemo app. Content can be updated with content value field
 Once template updated, execute run.sh and publish. Github action will publish content.
