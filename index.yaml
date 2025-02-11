@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   bluegreen:
   - apiVersion: v2
-    created: "2025-02-11T11:39:38.787116Z"
+    created: "2025-02-11T11:40:01.334268Z"
+    description: Blue-green deployment sample
+    digest: f4b98e7caf0fe314d5ff54824c07a8e4b1c1c4e847ed3cb60e083798a60db147
+    name: bluegreen
+    type: application
+    urls:
+    - https://vettom.github.io/demohelmrepo/bluegreen-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v2
+    created: "2025-02-11T11:40:01.333688Z"
     description: Blue-green deployment sample
     digest: f28f854ea513c576aaf1922dd2d59f21479d5642449bcd981ec62c3915e81531
     name: bluegreen
@@ -12,16 +21,16 @@ entries:
     version: 1.0.0
   dv-demo-app:
   - apiVersion: v2
-    created: "2025-02-11T11:39:38.789086Z"
+    created: "2025-02-11T11:40:01.335751Z"
     description: Demo app dvdemo.vettom.github.io
-    digest: f74abcd9c7a2fec1ada727a7e3c5fafe8a4b8c43335a2b0a55278d4b131cf205
+    digest: 9b777bd62df0355deb65d08d731df7d66e4f8598323db890aa61d2c69d0ed968
     name: dv-demo-app
     type: application
     urls:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-3.0.0.tgz
     version: 3.0.0
   - apiVersion: v2
-    created: "2025-02-11T11:39:38.788674Z"
+    created: "2025-02-11T11:40:01.335392Z"
     description: Simple Demo app deployment with ingress
     digest: ecd9568a0f897e56826f2e6f28360dc41ec6ca91fe0f7cc71759bac77dfc6499
     name: dv-demo-app
@@ -30,7 +39,7 @@ entries:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
-    created: "2025-02-11T11:39:38.788284Z"
+    created: "2025-02-11T11:40:01.33502Z"
     description: Simple Demo app deployment with ingress
     digest: 109b06d501f745260f29182da34b9f67c41ef2cc04b344a2ff7871a1a715acaa
     name: dv-demo-app
@@ -39,7 +48,7 @@ entries:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-1.0.2.tgz
     version: 1.0.2
   - apiVersion: v2
-    created: "2025-02-11T11:39:38.787899Z"
+    created: "2025-02-11T11:40:01.334689Z"
     description: Simple Demo app deployment with ingress
     digest: 5268e074848834fc72ec8f31c816cdf325dc88cdf78843e6699948b6dae51ce6
     name: dv-demo-app
@@ -48,7 +57,7 @@ entries:
     - https://vettom.github.io/demohelmrepo/dv-demo-app-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
-    created: "2025-02-11T11:39:38.787495Z"
+    created: "2025-02-11T11:40:01.334486Z"
     description: Simple Demo app deployment with ingress
     digest: 0d7633db1b1c368cf902d6e690d929212c1c8f3f37386d7940a798392d0deb7e
     name: dv-demo-app
@@ -59,7 +68,7 @@ entries:
   eks-demo:
   - apiVersion: v2
     appVersion: "2.5"
-    created: "2025-02-11T11:39:38.790197Z"
+    created: "2025-02-11T11:40:01.336284Z"
     description: helm chart with echoserver 2.5
     digest: 0c3da28d7df5a6d137f4e693b28da2337bf4a69aa0fe5955a2e94d667350428c
     name: eks-demo
@@ -69,9 +78,9 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: "2.4"
-    created: "2025-02-11T11:39:38.789427Z"
+    created: "2025-02-11T11:40:01.336096Z"
     description: helm chart with echoserver 2.4
-    digest: 18361f5c48677aa8bc9c089669f93e6d4f0dd59165c3401c2831bbc84ff5b3f8
+    digest: f2308e75884d0cb0a6e15b529710a336e821aebe60f7da0b3318f19e2d81eae1
     name: eks-demo
     type: application
     urls:
@@ -87,4 +96,4 @@ entries:
     urls:
     - https://vettom.github.io/demohelmrepo/wiztest-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-11T11:39:38.786625Z"
+generated: "2025-02-11T11:40:01.333421Z"
