@@ -13,4 +13,11 @@ helm repo index --url https://vettom.github.io/demohelmrepo/ --merge index.yaml 
 
 ```
 
+## Repo URL
+[https://vettom.github.io/demohelmrepo/](https://vettom.github.io/demohelmrepo/)
+
+## Bluegreen
+- V1 : blue
+- V2 : green
+- V3 : red
 - V 3.0.0  : dvdemo.vettom.github.io domain and no 443 redirect
