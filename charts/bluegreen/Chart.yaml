@@ -4,5 +4,5 @@ description: Blue-green deployment sample
 
 # Bluegreen deployment V1=blude, v2=green, v3=red
 type: application
-version: 1.0.0
+version: 3.0.0
 
