@@ -11,7 +11,7 @@ spec:
   hostnames:
 {{- range .Values.route.hostnames }}
     - {{ . }}
-{{- end -}}
+{{- end}}
     {{.Values.route.backendRef | toYaml | nindent 2}}
 
 {{- end }}

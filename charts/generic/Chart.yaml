@@ -1,0 +1,14 @@
+apiVersion: v2
+name: generic
+description: A Helm chart for Kubernetes
+type: application
+version: 0.1.0
+
+# Generic chart to deploy a simple application. Following inputs must be passed
+# image:
+#   repository: 
+#   pullPolicy: IfNotPresent
+#   tag: ""
+# service:
+#   type: ClusterIP
+#   port: 

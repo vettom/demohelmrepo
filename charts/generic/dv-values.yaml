@@ -1,0 +1,18 @@
+image:
+  repository: dennysv/bluegreen
+  pullPolicy: IfNotPresent
+  tag: "v3"
+service:
+  port: 8080
+livenessProbe:
+  tcpSocket:
+    port: 8080
+  # httpGet:
+  #   path: /
+  #   port: 8080
+readinessProbe:
+  tcpSocket:
+    port: 8080
+  # httpGet:
+  #   path: /
+  #   port: 8080

@@ -1,10 +1,10 @@
 route:
   enabled: true
   parentRef:
-    gatewayName: hellorayo-gateway
+    gatewayName: vettom-gateway
     namespace: gateway
   hostnames:
-    - bluegreen.dev.hellorayo.co.uk
+    - bluegreen.dev.vettom.co.uk
   backendRef:
     rules:
     - backendRefs:
